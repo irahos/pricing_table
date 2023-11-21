@@ -1,0 +1,147 @@
+.pricing-table {
+  font-family: "Vina Sans", sans-serif;
+}
+.pricing-table .toggle {
+  margin-top: 20px;
+}
+.pricing-table table {
+  width: 80%;
+  border-collapse: collapse;
+  margin: auto;
+  margin-top: 30px;
+  background-color: #FFFFFF;
+  box-shadow: 1px 1px 10px #000000;
+}
+.pricing-table table th,
+.pricing-table table td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #6c757d;
+  border-collapse: collapse;
+  color: #D5AAFF;
+}
+.pricing-table table th {
+  background-color: #FF9CEE;
+  color: #FFFFFF;
+  text-shadow: 0 0 3px #FF04D9, 0 0 5px #05BFF8;
+}
+.pricing-table table .checked {
+  background-image: url("./assets/checkmark.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.pricing-table table .unavailable {
+  background-image: url("./assets/cross.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.pricing-table table .memory-capacity {
+  text-transform: uppercase;
+}
+.pricing-table table .price {
+  font-weight: bold;
+}
+.pricing-table table .subscribe {
+  border-radius: 10px;
+  color: #FFFFFF;
+  background-color: #FF9CEE;
+  font-family: "Vina Sans", sans-serif;
+  box-shadow: 0 0 3px #FF04D9, 0 0 5px #05BFF8;
+  border: none;
+  cursor: pointer;
+}
+.pricing-table table .subscribe:hover {
+  background-color: #FFCCF9;
+  color: #FF9CEE;
+}
+.pricing-table table .clicked {
+  background-color: #FFCCF9;
+  color: #FF9CEE;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.show {
+  color: #FFFFFF;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+.show__content {
+  width: 50%;
+  padding: 10px;
+  background: linear-gradient(90deg, #FF9CEE, #D5AAFF);
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 0 0 30px #FF04D9, 0 0 5px #05BFF8;
+}
+
+.fas {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.check {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+  text-align: center;
+}
+.check-month {
+  color: #FF9CEE;
+}
+.check-year {
+  color: #D5AAFF;
+}
+
+input {
+  appearance: none;
+  position: relative;
+  width: 10%;
+  min-width: 70px;
+  max-width: 90px;
+  height: 30px;
+  border-radius: 15px;
+  background-color: #CCCCCC;
+  transition: background 0.3s;
+  outline: none;
+  cursor: pointer;
+}
+input::after {
+  content: "";
+  position: absolute;
+  top: 17%;
+  left: 5%;
+  transition: translate(-50%, -50%);
+  border-radius: 50%;
+  height: 1.25rem;
+  width: 1.25rem;
+  background-color: #FFFFFF;
+  box-shadow: 0 0 3px #FF04D9, 0 0 5px #05BFF8;
+  transition: left 0.3s;
+}
+input:checked {
+  background: linear-gradient(90deg, #FF9CEE, #D5AAFF);
+}
+input:checked::after {
+  left: 65%;
+}
+
+/*# sourceMappingURL=styles.css.map */

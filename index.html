@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Vina+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="pricing-table">
+    <table>
+      <thead>
+        <tr class="header">
+          <th>
+            Plan / Feature
+          </th>
+          <th>
+            <p>Basic</p>
+            <button class="subscribe" data-plan="basic">Subscribe</button>
+          </th>
+          <th>
+            <p>Standard</p>
+            <button class="subscribe" data-plan="standard">Subscribe</button>
+          </th>
+          <th>
+            <p>Premium</p>
+            <button class="subscribe" data-plan="premium">Subscribe</button>
+          </th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr class="price">
+          <td class="price-info">Price</td>
+          <td class="price-usd" data-monthly="9.59$" data-yearly="100.59$">9.59$</td>
+          <td class="price-usd" data-monthly="25.19$" data-yearly="250.19$">25.19$</td>
+          <td class="price-usd" data-monthly="35.99$" data-yearly="350.99$">35.99$</td>
+        </tr>
+
+        <tr class="photoshop">
+          <td class="photoshop-info">Photoshop for PC and iPad</td>
+          <td class="photoshop-checked checked"></td>
+          <td class="photoshop-checked checked"></td>
+          <td class="photoshop-checked checked"></td>
+        </tr>
+
+        <tr class="lightroom">
+          <td class="lightroom-info">Lightroom and Lightroom Classic</td>
+          <td class="lightroom-checked checked"></td>
+          <td class="lightroom-checked unavailable"></td>
+          <td class="lightroom-checked checked"></td>
+        </tr>
+
+        <tr class="express">
+          <td class="express-info">Adobe Express (premium) for websites and mobile</td>
+          <td class="express-checked unavailable"></td>
+          <td class="express-checked checked"></td>
+          <td class="express-checked checked"></td>
+        </tr>
+
+        <tr class="fresco">
+          <td class="fresco-info">Adobe Express (premium) for websites and mobile</td>
+          <td class="fresco-checked unavailable"></td>
+          <td class="fresco-checked checked"></td>
+          <td class="fresco-checked checked"></td>
+        </tr>
+
+        <tr class="memory">
+          <td class="memory-info">Cloud Storage</td>
+          <td class="memory-capacity">20 gb</td>
+          <td class="memory-capacity">100 gb</td>
+          <td class="memory-capacity">100 gb</td>
+        </tr>
+
+        <tr class="programs-cloud">
+          <td class="programs-cloud-info">20+ programs Creative Cloud</td>
+          <td class="programs-cloud-capacity unavailable"></td>
+          <td class="programs-cloud-capacity unavailable"></td>
+          <td class="programs-cloud-capacity checked"></td>
+        </tr>
+
+      </tbody>
+    </table>
+
+    <div class="modal" id="modal-basic" data-plan="basic">
+      <div class="show__content">
+        <p>
+          Thank you for subscribing to our Basic plan.
+          <br>
+          The start date of your subscription is:
+        </p>
+        <p id="display-date-basic" class="date"></p>
+        <i id="close-basic" class="fas fa-times"></i>
+      </div>
+    </div>
+
+    <div class="modal" id="modal-standard" data-plan="standard">
+      <div class="show__content">
+        <p>
+          Thank you for subscribing to our Standard plan.
+          <br>
+          The start date of your subscription is:
+        </p>
+        <p id="display-date-standard" class="date"></p>
+        <i id="close-standard" class="fas fa-times"></i>
+      </div>
+    </div>
+
+    <div class="modal" id="modal-premium" data-plan="premium">
+      <div class="show__content">
+        <p>
+          Thank you for subscribing to our Premium plan.
+          <br>
+          The start date of your subscription is:
+        </p>
+        <p id="display-date-premium" class="date"></p>
+        <i id="close-premium" class="fas fa-times"></i>
+      </div>
+    </div>
+
+    <div class="check">
+      <p class="check-month">Monthly</p>
+      <input id="check" type="checkbox">
+      <p class="check-year">Yearly</p>
+    </div>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>

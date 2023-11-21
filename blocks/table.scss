@@ -1,0 +1,71 @@
+.pricing-table {
+  font-family: 'Vina Sans', sans-serif;
+
+  .toggle {
+    margin-top: 20px;
+  }
+
+  table {
+    width: 80%;
+    border-collapse: collapse;
+    margin: auto;
+    margin-top: 30px;
+    background-color: $white-color;
+    box-shadow: 1px 1px 10px $table-shadow;
+
+    th,
+    td {
+      padding: 10px;
+      text-align: center;
+      border: 1px solid $border-color;
+      border-collapse: collapse;
+      color: $secondary-color;
+    }
+
+    th {
+      background-color: $primary-color;
+      color: $white-color;
+      text-shadow: 0 0 3px $shadow-pink, 0 0 5px $shadow-blue;
+    }
+
+    .checked {
+      background-image: url('./assets/checkmark.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    .unavailable {
+      background-image: url('./assets/cross.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    .memory-capacity {
+      text-transform: uppercase;
+    }
+
+    .price {
+      font-weight: bold;
+    }
+
+    .subscribe {
+      border-radius: 10px;
+      color: $white-color;
+      background-color: $primary-color;
+      font-family: 'Vina Sans', sans-serif;
+      box-shadow: 0 0 3px $shadow-pink, 0 0 5px $shadow-blue;
+      border: none;
+      cursor: pointer;
+
+      &:hover {
+        background-color: $button-background;
+        color: $primary-color;
+      }
+    }
+
+    .clicked {
+      background-color: $button-background;
+      color: $primary-color;
+    }
+  }
+}
