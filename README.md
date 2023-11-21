@@ -1,1 +1,1 @@
-# pricing_table
+# pricing_table_demo
